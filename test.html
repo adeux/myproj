@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title>Test</title>
+		<style type="text/css" rel="stylesheet">
+			body /*这是body标签样式*/
+			{
+				text-align:center; /*页面元素居中*/
+				background-color:#cccccc;
+			}
+			h1 /*h1标签样式*/
+			{
+				color:#ffffff;
+				font-size:30px;
+				text-shadow:0px 0px 20px #00ff00; /*字体的效果：添加阴影*/
+			}
+
+			#header /*带 # 指的是id */
+			{
+				width:900px;
+				height:100px;
+				margin-left:auto;
+				margin-right:auto;
+				/*以上两句是让div居中对齐*/
+
+			}
+			#nav
+			{
+				width:900px;
+				height:5px; /*这里不需要导航，所以我把宽度设的小*/
+				margin-top:3px; /*表示与上面边距为3个像素*/
+				margin-left:auto;
+				margin-right:auto;
+			}
+			#main
+			{
+				width:900px;
+				height:auto;
+				margin-top:3px;
+				margin-left:auto;
+				margin-right:auto;
+
+			}
+			#footer
+			{
+				width:900px;
+				height:75px;
+				margin-top:3px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			#search 
+			{
+				width:300px;
+				height:40px;
+				font-size:30px;
+				font-weight:bolder; /*给字体加粗*/
+				color:#ff0000;
+				text-shadow:0px 0px 10px #0000ff;
+				/*记住，这个text-shadow属性在ie中没有效果*/
+
+			}
+			#bt
+			{
+				width:100px;
+				height:40px;
+				font-size:20px;
+				font-weight:bolder;
+				color:#ff0000;
+			}
+			#myform
+			{
+				width:450px;
+				height:45px;
+				margin-top:3px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			#other h3 /*设置other中h3的样式，只在other中作用*/
+			{
+				text-align:left; /*防止other从body中继承了居中，故设定其对齐方式为左**/
+			}
+			#other a
+			{
+				text-decoration:none;
+				font-size:15px;
+				color:#ff0000;
+				font-weight:bold;
+				text-shadow:1px 1px 0px #000000;
+			}
+			#other a:link
+			{
+				color:red;
+			}
+			#other a:hover
+			{
+				color:#ffffff;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--最好用div把各个区块划分开来，header、nav、main、footer-->
+
+		<div id="header">
+			<h1>搜索神器</h1>
+		</div>
+
+		<div id="nav">
+		</div>
+
+		<div id="main">
+			<a href="">新闻</a>|
+			<a href="">网页</a>|
+			<a href="">论坛</a>|
+			<a href="">图片</a>|
+			<a href="">视频</a>|
+			<a href="">音乐</a>|
+			<a href="">地图</a>|
+			<hr>
+			<!--form 要有action，提交到这个页面，要有submit，促发提交动作-->
+			<form action="#" id="myform">
+				<input type="text" id="search" name="searchwords"/>
+				<input type="submit" id="bt" value="高级搜索"/>
+			</form>
+			<div id="other">
+				<h3>热点链接</h3>
+				<br>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<br>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<a href="http://hx608.sinaapp.com/">和谐608</a>
+				<br>
+				<br>
+				<h3>提醒</h3>
+				<span>在编辑时可以把div用颜色标出，这样可以清楚看出各个块的位置</span>
+				<p>.</p>
+				<p>.</p>
+				<p>.</p>
+			</div>
+		</div>
+
+		<div id="footer">
+			&copy; 2011 Adeux. All rights reserved.
+		</div>
+	</body>
+</html>
+
